@@ -30,7 +30,7 @@ body.dark {
   body.dark .main__container .main__content .main__select {
     background-color: #2b3844;
     color: #fff; }
-  body.dark .main__container .main__list ul {
+  body.dark .main__container .main__list {
     background-color: #2b3844; }
 
 .header__container {
@@ -82,18 +82,22 @@ body.dark {
       cursor: pointer; }
   .main__container .main__flag {
     display: flex;
-    justify-content: center;
+    background-color: red;
     gap: 74px;
-    margin-bottom: 75px; }
-    .main__container .main__flag ul {
-      box-shadow: 0px -15px 52px -35px black; }
-    .main__container .main__flag .text {
+    margin-bottom: 75px;
+    box-shadow: 0px -15px 52px -35px black; }
+    .main__container .main__flag .main__list {
       padding-left: 24px; }
-      .main__container .main__flag .text h2 {
+      .main__container .main__flag .main__list h2 {
         font-weight: 700;
         font-size: 26px;
         line-height: 77px; }
-      .main__container .main__flag .text h4 {
+      .main__container .main__flag .main__list h4 {
         display: inline; }
+
+@media screen and (max-width: 1350px) {
+  .main__flag {
+    display: flex;
+    flex-wrap: wrap; } }
 
 /*# sourceMappingURL=main.css.map */
