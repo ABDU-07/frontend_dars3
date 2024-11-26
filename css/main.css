@@ -30,7 +30,7 @@ body.dark {
   body.dark .main__container .main__content .main__select {
     background-color: #2b3844;
     color: #fff; }
-  body.dark .main__container .main__list {
+  body.dark .main__container .main__list ul {
     background-color: #2b3844; }
 
 .header__container {
@@ -56,12 +56,14 @@ body.dark {
 .main__container {
   display: flex;
   flex-direction: column;
-  max-width: 1440px; }
+  max-width: 1440px;
+  margin: auto; }
   .main__container .main__content {
     display: flex;
     justify-content: center;
+    margin: auto;
     margin: 48px 0px;
-    gap: 550px; }
+    justify-content: space-between; }
     .main__container .main__content .main__search {
       width: 480px;
       height: 56px;
@@ -82,12 +84,18 @@ body.dark {
       cursor: pointer; }
   .main__container .main__flag {
     display: flex;
-    background-color: red;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 74px;
-    margin-bottom: 75px;
-    box-shadow: 0px -15px 52px -35px black; }
+    padding: auto; }
+    .main__container .main__flag .main__content {
+      display: flex;
+      justify-content: center;
+      margin: 48px 0px; }
     .main__container .main__flag .main__list {
-      padding-left: 24px; }
+      box-shadow: 0px -15px 52px -35px black; }
+      .main__container .main__flag .main__list .text {
+        margin-left: 24px; }
       .main__container .main__flag .main__list h2 {
         font-weight: 700;
         font-size: 26px;
@@ -95,9 +103,19 @@ body.dark {
       .main__container .main__flag .main__list h4 {
         display: inline; }
 
-@media screen and (max-width: 1350px) {
-  .main__flag {
-    display: flex;
-    flex-wrap: wrap; } }
+@media screen and (max-width: 650px) {
+  .main__container {
+    justify-content: center;
+    align-items: center; }
+    .main__container .main__content {
+      flex-direction: column;
+      gap: 24px; }
+      .main__container .main__content .main__search {
+        width: 264px; }
+    .main__container .main__flag {
+      flex-direction: column; }
+      .main__container .main__flag .main__list {
+        width: 264px;
+        height: 336px; } }
 
 /*# sourceMappingURL=main.css.map */
