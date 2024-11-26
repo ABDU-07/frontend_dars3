@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+
+.container {
+  max-width: 1150px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+body {
+  background-color: #fff;
+  color: #000; }
+
+body.dark {
+  background-color: #202c36;
+  color: #fff; }
+  body.dark .header__btn {
+    background-color: #2b3844;
+    color: #fff; }
+  body.dark .header__container {
+    box-shadow: 0px 10px 52px -38px white; }
+  body.dark .main__container .main__content .main__search {
+    background-color: #2b3844; }
+  body.dark .main__container .main__content .main__select {
+    background-color: #2b3844;
+    color: #fff; }
+  body.dark .main__container .main__list ul {
+    background-color: #2b3844; }
+
+.header__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  height: 80px;
+  max-width: 1440px;
+  box-shadow: 0px 10px 52px -28px black; }
+  .header__container .header__btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease; }
+    .header__container .header__btn:hover {
+      opacity: 80%; }
+    .header__container .header__btn:active {
+      transform: scale(90%); }
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px; }
+  .main__container .main__content {
+    display: flex;
+    justify-content: center;
+    margin: 48px 0px;
+    gap: 550px; }
+    .main__container .main__content .main__search {
+      width: 480px;
+      height: 56px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0px 10px 52px -22px black;
+      cursor: pointer; }
+    .main__container .main__content .main__select {
+      width: 240px;
+      height: 56px;
+      font-family: "Nunito";
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0px 10px 52px -22px black;
+      cursor: pointer; }
+  .main__container .main__flag {
+    display: flex;
+    justify-content: center;
+    gap: 74px;
+    margin-bottom: 75px; }
+    .main__container .main__flag ul {
+      box-shadow: 0px -15px 52px -35px black; }
+    .main__container .main__flag .text {
+      padding-left: 24px; }
+      .main__container .main__flag .text h2 {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 77px; }
+      .main__container .main__flag .text h4 {
+        display: inline; }
+
+/*# sourceMappingURL=main.css.map */
